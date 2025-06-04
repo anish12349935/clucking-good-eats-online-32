@@ -41,7 +41,7 @@ const Hero = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 pb-20 lg:pb-0">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center" style={{gap:"8rem"}}>
           
           {/* Text content - order-1 on mobile (top), order-2 on desktop (right) */}
           <div className="text-center lg:text-left order-1 lg:order-2">
@@ -51,7 +51,7 @@ const Hero = () => {
       src="/curveArrow.png"
       alt=""
       className="text-black w-80 h-80 mr-2"
-      style={{ position: "absolute", right: "38em", zIndex: 1 }}
+      style={{ position: "absolute", right: "36em", zIndex: 1 }}
     />
                 <span className="bg-black text-yellow-400 px-4 py-1 rounded-full font-bold text-sm animate-scale-in">
                 TASTE THE CRUNCH!
