@@ -9,33 +9,33 @@ const Gallery = () => {
   const galleryImages = [
     {
       id: 1,
-      src: "https://www.licious.in/blog/wp-content/uploads/2019/05/Drumsticks-liquidation-plan-05.jpg",
-      alt: "Crispy Fried Chicken"
+      src: "/foodImg/crispyFriedSkewers.jpg",
+      alt: "Crispy fried skewers"
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1527477396000-e27163b481c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Buffalo Wings"
+      src: "/foodImg/classicChickenWings.jpg",
+      alt: "Classic Chicken Wings"
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1562967914-608f82629710?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Chicken Tenders"
+      src: "/foodImg/combo.jpeg",
+      alt: "Chicken Combo Meal"
     },
     {
       id: 4,
-      src: "https://images.unsplash.com/photo-1532550907401-a500c9a57435?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Grilled Chicken"
+      src: "/foodImg/ogChikenSandwitch.jpg",
+      alt: "OG Chicken Sandwich"
     },
     {
       id: 5,
-      src: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Chicken Burger"
+      src: "/foodImg/strawberrySmoothieMacchiato.jpeg",
+      alt: "Strawberry Smoothie Macchiato"
     },
     {
       id: 6,
-      src: "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "BBQ Wings"
+      src: "/foodImg/chocolateMilkshake.jpg",
+      alt: "Chocolate Milkshake"
     }
   ];
 

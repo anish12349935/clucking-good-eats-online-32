@@ -166,10 +166,10 @@ const Menu = () => {
                   <div className="text-3xl font-black">1000+</div>
                   <div className="text-sm">HAPPY CUSTOMERS</div>
                 </div>
-                <div className="text-center">
+                {/* <div className="text-center">
                   <div className="text-3xl font-black">30MIN</div>
                   <div className="text-sm">DELIVERY TIME</div>
-                </div>
+                </div> */}
                 <div className="text-center">
                   <div className="text-3xl font-black">24/7</div>
                   <div className="text-sm">AVAILABLE</div>

@@ -47,9 +47,9 @@ const Hero = () => {
           <div className="text-center lg:text-left order-1 lg:order-2">
             <div className="flex items-center justify-center lg:justify-start mb-4 animate-fade-in">
               <Zap className="text-black w-8 h-8 mr-2 animate-bounce" />
-              <span className="bg-black text-yellow-400 px-4 py-1 rounded-full font-bold text-sm animate-scale-in">
-                FINGER LICKIN' GOOD!
-              </span>
+                <span className="bg-black text-yellow-400 px-4 py-1 rounded-full font-bold text-sm animate-scale-in">
+                TASTE THE CRUNCH!
+                </span>
             </div>
             
             <div ref={titleRef}>
