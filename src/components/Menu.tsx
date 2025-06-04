@@ -1,106 +1,127 @@
 const Menu = () => {
-  const menuItems = [
-    {
-      id: 1,
-      name: "Spicy Cumin Mini Tenders",
-      description: "Mini chicken tenders marinated with bold cumin and fiery spices, fried to crispy perfection.",
-      price: "$11.99",
-      image: "/foodImg/cuminMiniTender.jpeg"
-    },
-    {
-      id: 2,
-      name: "Fried cheese chicken wings",
-      description: "Juicy chicken wings coated in a cheesy batter and deep-fried for a crunchy, gooey bite.",
-      price: "$7.99",
-      image: "/foodImg/cheeseFriedChiken.jpeg"
-    },
-    {
-      id: 3,
-      name: "SPICY CUMIN SANDWICH",
-      description: "A sandwich packed with spicy cumin-seasoned chicken, fresh veggies, and a zesty sauce.",
-      price: "$11.99",
-      image: "/foodImg/spicyCuminSandWich.jpeg"
-    },
-    {
-      id: 4,
-      name: "KARAAGE RICE BOWL",
-      description: "Japanese-style crispy fried chicken (karaage) served over steamed rice with savory toppings.",
-      price: "$12.99",
-      image: "/foodImg/karaageRiceBowl.jpeg"
-    },
-    {
-      id: 5,
-      name: "Kale Salad MONSTER",
-      description: "A hearty salad loaded with fresh kale, crispy chicken, and a medley of vibrant veggies.",
-      price: "$7.99",
-      image: "/foodImg/kaleSalad.jpeg"
-    },
-    {
-      id: 6,
-      name: "Poutine",
-      description: "Classic poutine with crispy fries, tender chicken, rich gravy, and melted cheese curds.",
-      price: "$8.99",
-      image: "/foodImg/poutine.jpeg"
-    }
-  ];
+	const menuItems = [
+		{
+			id: 1,
+			name: "Spicy Cumin Mini Tenders",
+			description:
+				"Mini chicken tenders marinated with bold cumin and fiery spices, fried to crispy perfection.",
+			price: "$11.99",
+			image: "/foodImg/cuminMiniTender.jpeg",
+		},
+		{
+			id: 2,
+			name: "Fried cheese chicken wings",
+			description:
+				"Juicy chicken wings coated in a cheesy batter and deep-fried for a crunchy, gooey bite.",
+			price: "$7.99",
+			image: "/foodImg/cheeseFriedChiken.jpeg",
+		},
+		{
+			id: 3,
+			name: "SPICY CUMIN SANDWICH",
+			description:
+				"A sandwich packed with spicy cumin-seasoned chicken, fresh veggies, and a zesty sauce.",
+			price: "$11.99",
+			image: "/foodImg/spicyCuminSandWich.jpeg",
+		},
+		{
+			id: 4,
+			name: "KARAAGE RICE BOWL",
+			description:
+				"Japanese-style crispy fried chicken (karaage) served over steamed rice with savory toppings.",
+			price: "$12.99",
+			image: "/foodImg/karaageRiceBowl.jpeg",
+		},
+		{
+			id: 5,
+			name: "Kale Salad MONSTER",
+			description:
+				"A hearty salad loaded with fresh kale, crispy chicken, and a medley of vibrant veggies.",
+			price: "$7.99",
+			image: "/foodImg/kaleSalad.jpeg",
+		},
+		{
+			id: 6,
+			name: "Poutine",
+			description:
+				"Classic poutine with crispy fries, tender chicken, rich gravy, and melted cheese curds.",
+			price: "$8.99",
+			image: "/foodImg/poutine.jpeg",
+		},
+	];
 
-  return (
-    <section id="menu" className="py-20 bg-gradient-to-br from-black via-gray-900 to-black relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0">
-        <div className="absolute top-10 left-10 w-32 h-32 bg-yellow-400 rounded-full opacity-20 animate-bounce"></div>
-        <div className="absolute bottom-20 right-20 w-24 h-24 bg-white rounded-full opacity-30 animate-pulse"></div>
-        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-yellow-400 rotate-45 opacity-25"></div>
-      </div>
+	return (
+		<section
+			id="menu"
+			className="py-20 bg-gradient-to-br from-black via-gray-900 to-black relative overflow-hidden"
+		>
+			{/* Background decoration */}
+			<div className="absolute inset-0">
+				<div className="absolute top-10 left-10 w-32 h-32 bg-yellow-400 rounded-full opacity-20 animate-bounce"></div>
+				<div className="absolute bottom-20 right-20 w-24 h-24 bg-white rounded-full opacity-30 animate-pulse"></div>
+				<div className="absolute top-1/2 left-1/4 w-16 h-16 bg-yellow-400 rotate-45 opacity-25"></div>
+			</div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16">
-          <div className="inline-block bg-yellow-400 text-black px-6 py-2 rounded-full font-black text-sm mb-4">
-            MENU MADNESS
-          </div>
-          <h2 className="text-6xl font-black text-white mb-6 drop-shadow-lg">
-            <span className="block">OUR CRAZY</span>
-            <span className="block text-yellow-400">CHICKEN MENU!</span>
-          </h2>
-          <p className="text-xl text-white max-w-2xl mx-auto font-bold">
-            Get ready for the WILDEST chicken dishes that'll make your taste buds DANCE!
-          </p>
-        </div>
+			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+				<div className="text-center mb-16">
+					<div className="inline-block bg-yellow-400 text-black px-6 py-2 rounded-full font-black text-sm mb-4">
+						MENU MADNESS
+					</div>
+					<h2 className="text-6xl font-black text-white mb-6 drop-shadow-lg">
+						<span className="block">OUR CRAZY</span>
+						<span className="block text-yellow-400">CHICKEN MENU!</span>
+					</h2>
+					<p className="text-xl text-white max-w-2xl mx-auto font-bold">
+						Get ready for the WILDEST chicken dishes that'll make your taste
+						buds DANCE!
+					</p>
+				</div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {menuItems.map((item, index) => (
-            <div key={item.id} className={`bg-white rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 border-4 ${index % 2 === 0 ? 'border-yellow-400' : 'border-black'}`}>
-              <div className="relative overflow-hidden">
-                <img 
-                  src={item.image} 
-                  alt={item.name}
-                  className="w-full h-48 object-cover hover:scale-110 transition-transform duration-300"
-                />
-                <div className="absolute top-4 right-4 bg-yellow-400 text-black px-3 py-1 rounded-full font-black text-sm">
-                  POPULAR!
-                </div>
-              </div>
-              <div className="p-6">
-                <div className="flex justify-between items-start mb-3">
-                  <h3 className="text-xl font-black text-gray-800 leading-tight">{item.name}</h3>
-                  <span className="text-2xl font-black text-black bg-yellow-400 px-3 py-1 rounded-full">{item.price}</span>
-                </div>
-                <p className="text-gray-600 mb-6 font-semibold" style={{minHeight:"4.5em"}}>{item.description}</p>
-                <div className="text-center">
-                  {/* <div className="bg-gradient-to-r from-black to-gray-800 text-yellow-400 py-3 px-6 rounded-full font-black text-lg transform hover:scale-105 transition-all duration-200 cursor-pointer">
+				<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					{menuItems.map((item, index) => (
+						<div
+							key={item.id}
+							className={`bg-white rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 border-4 ${index % 2 === 0 ? "border-yellow-400" : "border-black"}`}
+						>
+							<div className="relative overflow-hidden">
+								<img
+									src={item.image}
+									alt={item.name}
+									className="w-full h-48 object-cover hover:scale-110 transition-transform duration-300"
+								/>
+								<div className="absolute top-4 right-4 bg-yellow-400 text-black px-3 py-1 rounded-full font-black text-sm">
+									POPULAR!
+								</div>
+							</div>
+							<div className="p-6">
+								<div className="flex justify-between items-start mb-3">
+									<h3 className="text-xl font-black text-gray-800 leading-tight">
+										{item.name}
+									</h3>
+									<span className="text-2xl font-black text-black bg-yellow-400 px-3 py-1 rounded-full">
+										{item.price}
+									</span>
+								</div>
+								<p
+									className="text-gray-600 mb-6 font-semibold"
+									style={{ minHeight: "4.5em" }}
+								>
+									{item.description}
+								</p>
+								<div className="text-center">
+									{/* <div className="bg-gradient-to-r from-black to-gray-800 text-yellow-400 py-3 px-6 rounded-full font-black text-lg transform hover:scale-105 transition-all duration-200 cursor-pointer">
                     LOOKS DELICIOUS!
                   </div> */}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+								</div>
+							</div>
+						</div>
+					))}
+				</div>
 
-        <div className="text-center mt-16">
+				{/* <div className="text-center mt-16">
           <div className="bg-yellow-400 text-black py-12 px-6 rounded-3xl shadow-2xl relative overflow-hidden">
-            {/* Enhanced decorative elements */}
+       
             
-            {/* Bottom left decorative section */}
             <div className="absolute bottom-0 left-0 w-32 h-32 bg-black opacity-10 rounded-tr-full"></div>
             <div className="absolute bottom-6 left-6 flex flex-col space-y-2">
               <div className="w-20 h-20 bg-black rounded-full flex items-center justify-center transform rotate-12 animate-bounce">
@@ -111,7 +132,6 @@ const Menu = () => {
               </div>
             </div>
 
-            {/* Bottom right decorative section */}
             <div className="absolute bottom-0 right-0 w-32 h-32 bg-black opacity-10 rounded-tl-full"></div>
             <div className="absolute bottom-6 right-6 flex flex-col items-end space-y-2">
               <div className="flex space-x-1">
@@ -126,11 +146,9 @@ const Menu = () => {
               </div>
             </div>
 
-            {/* Top decorative elements */}
             <div className="absolute top-4 left-1/4 w-8 h-8 bg-black rounded-full opacity-20 animate-pulse"></div>
             <div className="absolute top-4 right-1/4 w-6 h-6 bg-black rounded-full opacity-30 animate-bounce"></div>
             
-            {/* Floating elements */}
             <div className="absolute top-8 left-16 transform rotate-45">
               <div className="w-4 h-4 bg-black opacity-25"></div>
             </div>
@@ -138,7 +156,15 @@ const Menu = () => {
               <div className="w-4 h-4 bg-black opacity-25"></div>
             </div>
             
-            {/* Main content with enhanced spacing */}
+
+
+
+
+
+
+
+
+            
             <div className="relative z-10 pt-6 pb-8">
               <h3 className="text-5xl font-black mb-6 drop-shadow-lg">HUNGRY YET?</h3>
               <p className="mb-8 font-bold text-xl max-w-md mx-auto leading-relaxed">
@@ -160,27 +186,44 @@ const Menu = () => {
                 </div>
               </div>
               
-              {/* Additional trust signals */}
               <div className="mt-8 flex justify-center space-x-8 text-black font-bold">
                 <div className="text-center">
                   <div className="text-3xl font-black">1000+</div>
                   <div className="text-sm">HAPPY CUSTOMERS</div>
                 </div>
-                {/* <div className="text-center">
+                <div className="text-center">
                   <div className="text-3xl font-black">30MIN</div>
                   <div className="text-sm">DELIVERY TIME</div>
-                </div> */}
+                </div>
                 <div className="text-center">
                   <div className="text-3xl font-black">24/7</div>
                   <div className="text-sm">AVAILABLE</div>
                 </div>
               </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
           </div>
+        </div> */}
+
+        <div className="flex justify-center mt-12">
+          <a href="https://www.clover.com/online-ordering/hfcyxe" className="bg-yellow-400 text-black hover:bg-yellow-300 px-12 py-4 rounded-full font-black text-xl transition-all duration-200 transform hover:scale-110 border-4 border-yellow-400 shadow-lg">
+            VIEW ENTIRE MENU
+          </a>
         </div>
-      </div>
-    </section>
-  );
+			</div>
+		</section>
+	);
 };
 
 export default Menu;

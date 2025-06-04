@@ -1,4 +1,4 @@
-import { ArrowDown, Zap, Star } from 'lucide-react';
+import { ArrowDown, Star } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { useScrollTrigger } from '../hooks/useScrollTrigger';
 
@@ -46,7 +46,7 @@ const Hero = () => {
           {/* Text content - order-1 on mobile (top), order-2 on desktop (right) */}
           <div className="text-center lg:text-left order-1 lg:order-2">
             <div className="flex items-center justify-center lg:justify-start mb-4 animate-fade-in">
-              <Zap className="text-black w-8 h-8 mr-2 animate-bounce" />
+              {/* <Zap className="text-black w-8 h-8 mr-2 animate-bounce" /> */}
                 <span className="bg-black text-yellow-400 px-4 py-1 rounded-full font-bold text-sm animate-scale-in">
                 TASTE THE CRUNCH!
                 </span>
@@ -65,7 +65,7 @@ const Hero = () => {
                       : 'opacity-0 transform -translate-x-20'
                   }`}
                 >
-                  CRISPY
+                  SATISFY
                 </span>
                 <span 
                   className={`block text-black drop-shadow-lg transition-all duration-700 delay-400 ${
@@ -74,7 +74,7 @@ const Hero = () => {
                       : 'opacity-0 transform translate-x-20'
                   }`}
                 >
-                  CHICKEN
+                  YOUR
                 </span>
                 <span 
                   className={`block text-white transition-all duration-700 delay-600 ${
@@ -83,7 +83,7 @@ const Hero = () => {
                       : 'opacity-0 transform scale-75'
                   }`}
                 >
-                  MADNESS!
+                  CRAVING
                 </span>
               </h1>
             </div>
@@ -94,7 +94,7 @@ const Hero = () => {
                 : 'opacity-0 transform translate-y-10'
             }`}>
               <a href='#menu' className="bg-black hover:bg-gray-800 text-yellow-400 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-black text-base sm:text-lg shadow-2xl transform hover:scale-110 transition-all duration-300">
-                EXPLORE MENU
+                VIEW MENU
               </a>
               <a href='https://www.clover.com/online-ordering/hfcyxe' className="bg-white hover:bg-gray-100 text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full font-black text-base sm:text-lg shadow-2xl transform hover:scale-110 transition-all duration-300 border-4 border-black">
                 ORDER NOW!
@@ -153,12 +153,12 @@ const Hero = () => {
             </div>
 
             {/* Floating elements with parallax */}
-            <div 
+            {/* <div 
               className="absolute -top-4 -right-4 bg-black text-yellow-400 p-2 sm:p-3 rounded-full font-black text-xs sm:text-sm animate-bounce z-20"
               style={{ transform: `translateY(${scrollY * 0.2}px)` }}
             >
               HOT!
-            </div>
+            </div> */}
             <div 
               className="absolute -bottom-4 -left-4 bg-white text-black p-2 sm:p-3 rounded-full font-black text-xs sm:text-sm animate-pulse z-20"
               style={{ transform: `translateY(${-scrollY * 0.15}px)` }}
@@ -179,6 +179,114 @@ const Hero = () => {
       <div className="absolute bottom-0 left-0 w-full z-20">
         <div className="bg-black text-yellow-400 py-4">
           <div className="flex items-center font-black text-xl whitespace-nowrap animate-[scroll_20s_linear_infinite]">
+            <span className="mx-8">CRISPY GOODNESS!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CHICKEN PARADISE!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">FLAVOR EXPLOSION!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CRISPY GOODNESS!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CHICKEN PARADISE!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">FLAVOR EXPLOSION!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CRISPY GOODNESS!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CHICKEN PARADISE!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">FLAVOR EXPLOSION!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CRISPY GOODNESS!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CHICKEN PARADISE!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">FLAVOR EXPLOSION!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CRISPY GOODNESS!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CHICKEN PARADISE!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">FLAVOR EXPLOSION!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CRISPY GOODNESS!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CHICKEN PARADISE!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">FLAVOR EXPLOSION!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CRISPY GOODNESS!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CHICKEN PARADISE!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">FLAVOR EXPLOSION!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CRISPY GOODNESS!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CHICKEN PARADISE!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">FLAVOR EXPLOSION!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CRISPY GOODNESS!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CHICKEN PARADISE!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">FLAVOR EXPLOSION!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CRISPY GOODNESS!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CHICKEN PARADISE!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">FLAVOR EXPLOSION!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CRISPY GOODNESS!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CHICKEN PARADISE!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">FLAVOR EXPLOSION!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CRISPY GOODNESS!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CHICKEN PARADISE!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">FLAVOR EXPLOSION!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CRISPY GOODNESS!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CHICKEN PARADISE!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">FLAVOR EXPLOSION!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CRISPY GOODNESS!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CHICKEN PARADISE!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">FLAVOR EXPLOSION!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CRISPY GOODNESS!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CHICKEN PARADISE!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">FLAVOR EXPLOSION!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CRISPY GOODNESS!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CHICKEN PARADISE!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">FLAVOR EXPLOSION!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CRISPY GOODNESS!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CHICKEN PARADISE!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">FLAVOR EXPLOSION!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CRISPY GOODNESS!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">CHICKEN PARADISE!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
+            <span className="mx-8">FLAVOR EXPLOSION!</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
             <span className="mx-8">CRISPY GOODNESS!</span>
             <span className="w-3 h-3 bg-yellow-400 rounded-full mx-4"></span>
             <span className="mx-8">CHICKEN PARADISE!</span>

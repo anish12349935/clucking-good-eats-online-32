@@ -85,11 +85,11 @@ const Gallery = () => {
                   </p>
                 </div>
               </div>
-              {index % 2 === 0 && (
+              {/* {index % 2 === 0 && (
                 <div className="absolute top-4 right-4 bg-black text-yellow-400 px-2 py-1 rounded-full font-black text-xs animate-bounce">
                   WOW!
                 </div>
-              )}
+              )} */}
             </div>
           ))}
         </div>
