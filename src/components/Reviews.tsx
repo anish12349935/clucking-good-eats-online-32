@@ -90,7 +90,7 @@ const Reviews = () => {
         <div className="absolute top-1/2 left-1/4 w-20 h-20 bg-black rounded-full opacity-30"></div>
       </div>
 
-      <div className="w-full px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="w-full  sm:px-6 lg:px-8 relative z-10" style={{paddingLeft:"0px", paddingRight:"0px"}}>
         <div ref={headerRef} className={`text-center mb-16 transition-all duration-1000 ${
           headerVisible 
             ? 'opacity-100 transform translate-y-0' 

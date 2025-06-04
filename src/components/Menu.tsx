@@ -2,45 +2,45 @@ const Menu = () => {
   const menuItems = [
     {
       id: 1,
-      name: "CRISPY BOMB CHICKEN",
-      description: "Golden crispy chicken pieces with our SECRET spice blend that'll blow your mind!",
-      price: "$12.99",
-      image: "https://www.licious.in/blog/wp-content/uploads/2019/05/Drumsticks-liquidation-plan-05.jpg"
+      name: "Spicy Cumin Mini Tenders",
+      description: "Mini chicken tenders marinated with bold cumin and fiery spices, fried to crispy perfection.",
+      price: "$11.99",
+      image: "/foodImg/cuminMiniTender.jpeg"
     },
     {
       id: 2,
-      name: "BUFFALO BEAST WINGS",
-      description: "Spicy buffalo wings that pack a PUNCH! Served with our legendary ranch sauce",
-      price: "$9.99",
-      image: "https://images.unsplash.com/photo-1527477396000-e27163b481c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+      name: "Fried cheese chicken wings",
+      description: "Juicy chicken wings coated in a cheesy batter and deep-fried for a crunchy, gooey bite.",
+      price: "$7.99",
+      image: "/foodImg/cheeseFriedChiken.jpeg"
     },
     {
       id: 3,
-      name: "TENDER MADNESS STRIPS",
-      description: "Tender chicken strips breaded with INSANE crunch factor - you'll be addicted!",
-      price: "$8.99",
-      image: "https://images.unsplash.com/photo-1562967914-608f82629710?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+      name: "SPICY CUMIN SANDWICH",
+      description: "A sandwich packed with spicy cumin-seasoned chicken, fresh veggies, and a zesty sauce.",
+      price: "$11.99",
+      image: "/foodImg/spicyCuminSandWich.jpeg"
     },
     {
       id: 4,
-      name: "GRILLED PERFECTION",
-      description: "Juicy grilled chicken breast with herbs that'll transport you to FLAVOR TOWN!",
-      price: "$14.99",
-      image: "https://images.unsplash.com/photo-1532550907401-a500c9a57435?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+      name: "KARAAGE RICE BOWL",
+      description: "Japanese-style crispy fried chicken (karaage) served over steamed rice with savory toppings.",
+      price: "$12.99",
+      image: "/foodImg/karaageRiceBowl.jpeg"
     },
     {
       id: 5,
-      name: "CHICKEN BURGER BEAST",
-      description: "Crispy chicken patty stacked HIGH with fresh goodies - it's a MONSTER!",
-      price: "$10.99",
-      image: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+      name: "Kale Salad MONSTER",
+      description: "A hearty salad loaded with fresh kale, crispy chicken, and a medley of vibrant veggies.",
+      price: "$7.99",
+      image: "/foodImg/kaleSalad.jpeg"
     },
     {
       id: 6,
-      name: "BBQ SMOKY DEMONS",
-      description: "Smoky BBQ glazed wings with a tangy kick that'll haunt your dreams!",
-      price: "$11.99",
-      image: "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+      name: "Poutine",
+      description: "Classic poutine with crispy fries, tender chicken, rich gravy, and melted cheese curds.",
+      price: "$8.99",
+      image: "/foodImg/poutine.jpeg"
     }
   ];
 
@@ -85,7 +85,7 @@ const Menu = () => {
                   <h3 className="text-xl font-black text-gray-800 leading-tight">{item.name}</h3>
                   <span className="text-2xl font-black text-black bg-yellow-400 px-3 py-1 rounded-full">{item.price}</span>
                 </div>
-                <p className="text-gray-600 mb-6 font-semibold">{item.description}</p>
+                <p className="text-gray-600 mb-6 font-semibold" style={{minHeight:"4.5em"}}>{item.description}</p>
                 <div className="text-center">
                   <div className="bg-gradient-to-r from-black to-gray-800 text-yellow-400 py-3 px-6 rounded-full font-black text-lg transform hover:scale-105 transition-all duration-200 cursor-pointer">
                     LOOKS DELICIOUS!
