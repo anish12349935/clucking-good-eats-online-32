@@ -54,33 +54,33 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-start">
                 <Clock size={18} className="text-yellow-400 mr-3 mt-1" />
-                <div className="text-gray-300 text-sm">
-                  <div className="flex justify-between mb-1 min-w-[200px]">
-                    <span className="w-20">Sunday</span>
+                <div className="text-gray-300 text-sm space-y-1">
+                  <div className="flex justify-between w-[220px]">
+                    <span className="w-24">Sunday</span>
                     <span>10:30 a.m. - 10:30 p.m.</span>
                   </div>
-                  <div className="flex justify-between mb-1 min-w-[200px]">
-                    <span className="w-20">Monday</span>
+                  <div className="flex justify-between w-[220px]">
+                    <span className="w-24">Monday</span>
                     <span>10:30 a.m. - 8:30 p.m.</span>
                   </div>
-                  <div className="flex justify-between mb-1 min-w-[200px]">
-                    <span className="w-20">Tuesday</span>
+                  <div className="flex justify-between w-[220px]">
+                    <span className="w-24">Tuesday</span>
                     <span>10:30 a.m. - 8:30 p.m.</span>
                   </div>
-                  <div className="flex justify-between mb-1 min-w-[200px]">
-                    <span className="w-20">Wednesday</span>
+                  <div className="flex justify-between w-[220px]">
+                    <span className="w-24">Wednesday</span>
                     <span>10:30 a.m. - 11:00 p.m.</span>
                   </div>
-                  <div className="flex justify-between mb-1 min-w-[200px]">
-                    <span className="font-semibold w-20">Thursday</span>
-                    <span className="font-semibold">10:30 a.m. - 11:00 p.m.</span>
+                  <div className="flex justify-between w-[220px]">
+                    <span className="w-24">Thursday</span>
+                    <span>10:30 a.m. - 11:00 p.m.</span>
                   </div>
-                  <div className="flex justify-between mb-1 min-w-[200px]">
-                    <span className="w-20">Friday</span>
+                  <div className="flex justify-between w-[220px]">
+                    <span className="w-24">Friday</span>
                     <span>10:30 a.m. - 10:00 p.m.</span>
                   </div>
-                  <div className="flex justify-between min-w-[200px]">
-                    <span className="w-20">Saturday</span>
+                  <div className="flex justify-between w-[220px]">
+                    <span className="w-24">Saturday</span>
                     <span>10:30 a.m. - 11:00 p.m.</span>
                   </div>
                 </div>
