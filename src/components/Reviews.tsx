@@ -1,76 +1,72 @@
+
 import { Star, Heart } from 'lucide-react';
+import { useScrollTrigger } from '../hooks/useScrollTrigger';
 
 const Reviews = () => {
+  const { isVisible: headerVisible, elementRef: headerRef } = useScrollTrigger();
+  const { isVisible: reviewsVisible, elementRef: reviewsRef } = useScrollTrigger();
+  const { isVisible: ctaVisible, elementRef: ctaRef } = useScrollTrigger();
+
   const reviews = [
     {
       id: 1,
       name: "Sarah K",
       rating: 5,
-      comment: "Ordered Hot Chicken for the first time and it was delicious! The yam fries were yummy too. We'll definitely order again and try more flavours.",
-      location: "Saskatoon, Canada"
+      comment: "Ordered Hot Chicken for the first time and it was delicious! The yam fries were yummy too. We'll definitely order again and try more flavours."
     },
     {
       id: 2,
       name: "Mike R",
       rating: 5,
-      comment: "DUDE! These buffalo wings are from another PLANET! My taste buds are still dancing",
-      location: "Martensville, Canada"
+      comment: "DUDE! These buffalo wings are from another PLANET! My taste buds are still dancing"
     },
     {
       id: 3,
       name: "Yuki L.",
       rating: 5,
-      comment: "I've found my HAPPY PLACE! The chicken tenders are LIFE-CHANGING! My family thinks I'm crazy but WHO CARES?!",
-      location: "Warman, Canada"
+      comment: "I've found my HAPPY PLACE! The chicken tenders are LIFE-CHANGING! My family thinks I'm crazy but WHO CARES?!"
     },
     {
       id: 4,
       name: "Alex P.",
       rating: 5,
-      comment: "Best fried chicken in the area! Worth the short drive from Osler.",
-      location: "Osler, Canada"
+      comment: "Best fried chicken in the area!"
     },
     {
       id: 5,
       name: "Priya S.",
       rating: 5,
-      comment: "Super crispy and juicy! The honey garlic sauce is a must-try. Delivery was quick too.",
-      location: "Saskatoon, Canada"
+      comment: "Super crispy and juicy! The honey garlic sauce is a must-try. Delivery was quick too."
     },
     {
       id: 6,
       name: "Jordan T.",
       rating: 5,
-      comment: "The Nashville Hot is the real deal! Spicy, crunchy, and addictive. 10/10 would recommend.",
-      location: "Martensville, Canada"
+      comment: "The Nashville Hot is the real deal! Spicy, crunchy, and addictive. 10/10 would recommend."
     },
     {
       id: 7,
       name: "Emily W.",
       rating: 5,
-      comment: "I can't stop thinking about the loaded fries. Portions are generous and the staff is super friendly!",
-      location: "Warman, Canada"
+      comment: "I can't stop thinking about the loaded fries. Portions are generous and the staff is super friendly!"
     },
     {
       id: 8,
       name: "Carlos M.",
       rating: 5,
-      comment: "Great value for money. The chicken sandwich was massive and packed with flavor.",
-      location: "Saskatoon, Canada"
+      comment: "Great value for money. The chicken sandwich was massive and packed with flavor."
     },
     {
       id: 9,
       name: "Linda G.",
       rating: 5,
-      comment: "My kids LOVED the popcorn chicken. We'll be back every week!",
-      location: "Osler, Canada"
+      comment: "My kids LOVED the popcorn chicken. We'll be back every week!"
     },
     {
       id: 10,
       name: "Samir D.",
       rating: 5,
-      comment: "Absolutely blown away by the taste and crunch. This place is a hidden gem!",
-      location: "Martensville, Canada"
+      comment: "Absolutely blown away by the taste and crunch. This place is a hidden gem!"
     }
   ];
 
@@ -86,7 +82,7 @@ const Reviews = () => {
   };
 
   return (
-    <section id="reviews" className="py-20 bg-gradient-to-br from-yellow-400 via-yellow-500 to-yellow-600 relative overflow-hidden">
+    <section id="reviews" className="py-20 bg-gradient-to-br from-yellow-400 via-yellow-500 to-yellow-600 relative overflow-hidden w-full">
       {/* Background decorations */}
       <div className="absolute inset-0">
         <div className="absolute top-16 left-16 w-32 h-32 bg-black rounded-full opacity-20 animate-bounce"></div>
@@ -94,8 +90,12 @@ const Reviews = () => {
         <div className="absolute top-1/2 left-1/4 w-20 h-20 bg-black rounded-full opacity-30"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16">
+      <div className="w-full px-4 sm:px-6 lg:px-8 relative z-10">
+        <div ref={headerRef} className={`text-center mb-16 transition-all duration-1000 ${
+          headerVisible 
+            ? 'opacity-100 transform translate-y-0' 
+            : 'opacity-0 transform translate-y-10'
+        }`}>
           <div className="inline-flex items-center bg-white text-black px-6 py-3 rounded-full font-black text-sm mb-4">
             <Heart className="w-5 h-5 mr-2 text-black animate-pulse" />
             CUSTOMER LOVE LETTERS
@@ -110,8 +110,12 @@ const Reviews = () => {
           </p>
         </div>
 
-        {/* Horizontal Infinite Auto Scroll */}
-        <div className="relative w-full overflow-x-hidden">
+        {/* Horizontal Infinite Auto Scroll - Full Width */}
+        <div ref={reviewsRef} className={`relative w-full overflow-x-hidden transition-all duration-1000 delay-300 ${
+          reviewsVisible 
+            ? 'opacity-100 transform translate-y-0' 
+            : 'opacity-0 transform translate-y-10'
+        }`}>
           <div
             className="flex items-stretch gap-8 animate-scroll-reviews"
             style={{
@@ -128,7 +132,6 @@ const Reviews = () => {
                 <div className="flex items-center mb-4">
                   <div className="ml-4 flex-1">
                     <h3 className="font-black text-gray-800 text-lg">{review.name}</h3>
-                    <span className="text-black font-bold text-sm">{review.location}</span>
                     <div className="flex mb-2">
                       {renderStars(review.rating)}
                     </div>
@@ -142,7 +145,11 @@ const Reviews = () => {
           </div>
         </div>
 
-        <div className="text-center mt-16">
+        <div ref={ctaRef} className={`text-center mt-16 transition-all duration-1000 delay-600 max-w-4xl mx-auto ${
+          ctaVisible 
+            ? 'opacity-100 transform translate-y-0' 
+            : 'opacity-0 transform translate-y-10'
+        }`}>
           <div className="bg-black text-yellow-400 py-10 px-8 rounded-3xl shadow-2xl border-4 border-black">
             <h3 className="text-4xl font-black mb-4">JOIN THE CHICKEN REVOLUTION!</h3>
             <p className="mb-6 font-bold text-xl">Become part of our CRAZY chicken family!</p>
