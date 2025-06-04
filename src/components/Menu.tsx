@@ -64,17 +64,17 @@ const Menu = () => {
 
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 				<div className="text-center mb-16">
-					<div className="inline-block bg-yellow-400 text-black px-6 py-2 rounded-full font-black text-sm mb-4">
+					{/* <div className="inline-block bg-yellow-400 text-black px-6 py-2 rounded-full font-black text-sm mb-4">
 						MENU MADNESS
-					</div>
+					</div> */}
 					<h2 className="text-6xl font-black text-white mb-6 drop-shadow-lg">
 						<span className="block">OUR CRAZY</span>
 						<span className="block text-yellow-400">CHICKEN MENU!</span>
 					</h2>
-					<p className="text-xl text-white max-w-2xl mx-auto font-bold">
+					{/* <p className="text-xl text-white max-w-2xl mx-auto font-bold">
 						Get ready for the WILDEST chicken dishes that'll make your taste
 						buds DANCE!
-					</p>
+					</p> */}
 				</div>
 
 				<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -89,9 +89,9 @@ const Menu = () => {
 									alt={item.name}
 									className="w-full h-48 object-cover hover:scale-110 transition-transform duration-300"
 								/>
-								<div className="absolute top-4 right-4 bg-yellow-400 text-black px-3 py-1 rounded-full font-black text-sm">
+								{/* <div className="absolute top-4 right-4 bg-yellow-400 text-black px-3 py-1 rounded-full font-black text-sm">
 									POPULAR!
-								</div>
+								</div> */}
 							</div>
 							<div className="p-6">
 								<div className="flex justify-between items-start mb-3">

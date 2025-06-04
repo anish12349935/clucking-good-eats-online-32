@@ -54,16 +54,16 @@ const Gallery = () => {
             ? 'opacity-100 transform translate-y-0' 
             : 'opacity-0 transform translate-y-10'
         }`}>
-          <div className="inline-block bg-black text-yellow-400 px-6 py-2 rounded-full font-black text-sm mb-4">
+          {/* <div className="inline-block bg-black text-yellow-400 px-6 py-2 rounded-full font-black text-sm mb-4">
             PHOTO GALLERY
-          </div>
+          </div> */}
           <h2 className="text-6xl font-black text-black mb-6 drop-shadow-lg">
             <span className="block">FEAST YOUR</span>
             <span className="block text-yellow-500">EYES!</span>
           </h2>
-          <p className="text-xl text-black max-w-2xl mx-auto font-bold">
+          {/* <p className="text-xl text-black max-w-2xl mx-auto font-bold">
             Warning: These photos might cause EXTREME hunger! View at your own risk!
-          </p>
+          </p> */}
         </div>
 
         <div ref={gridRef} className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-1000 delay-300 ${
@@ -99,6 +99,10 @@ const Gallery = () => {
             ? 'opacity-100 transform translate-y-0' 
             : 'opacity-0 transform translate-y-10'
         }`}>
+
+
+
+{/*           
           <div className="bg-black text-yellow-400 py-8 px-6 rounded-3xl shadow-2xl border-4 border-yellow-400">
             <h3 className="text-4xl font-black mb-4">SHARE THE MADNESS!</h3>
             <p className="mb-6 font-bold text-lg">Tag us in your chicken adventures!</p>
@@ -107,7 +111,10 @@ const Gallery = () => {
               <span className="bg-white text-black px-4 py-2 rounded-full font-black">#CrispyGoodness</span>
               <span className="bg-yellow-400 text-black px-4 py-2 rounded-full font-black">#FlavorExplosion</span>
             </div>
-          </div>
+          </div> */}
+
+
+
         </div>
       </div>
     </section>

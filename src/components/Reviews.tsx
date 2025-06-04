@@ -96,18 +96,18 @@ const Reviews = () => {
             ? 'opacity-100 transform translate-y-0' 
             : 'opacity-0 transform translate-y-10'
         }`}>
-          <div className="inline-flex items-center bg-white text-black px-6 py-3 rounded-full font-black text-sm mb-4">
+          {/* <div className="inline-flex items-center bg-white text-black px-6 py-3 rounded-full font-black text-sm mb-4">
             <Heart className="w-5 h-5 mr-2 text-black animate-pulse" />
             CUSTOMER LOVE LETTERS
             <Heart className="w-5 h-5 ml-2 text-black animate-pulse" />
-          </div>
+          </div> */}
           <h2 className="text-6xl font-black text-black mb-6 drop-shadow-lg">
-            <span className="block">PEOPLE ARE</span>
-            <span className="block text-white">GOING CRAZY! </span>
+            <span className="block">LOCALS LIKE</span>
+            <span className="block text-white">YOU LOVES US </span>
           </h2>
-          <p className="text-xl text-black max-w-2xl mx-auto font-bold">
+          {/* <p className="text-xl text-black max-w-2xl mx-auto font-bold">
             Don't believe us? Check out these WILD reactions from our customers!
-          </p>
+          </p> */}
         </div>
 
         {/* Horizontal Infinite Auto Scroll - Full Width */}
@@ -150,6 +150,14 @@ const Reviews = () => {
             ? 'opacity-100 transform translate-y-0' 
             : 'opacity-0 transform translate-y-10'
         }`}>
+
+
+
+
+
+{/* 
+
+
           <div className="bg-black text-yellow-400 py-10 px-8 rounded-3xl shadow-2xl border-4 border-black">
             <h3 className="text-4xl font-black mb-4">JOIN THE CHICKEN REVOLUTION!</h3>
             <p className="mb-6 font-bold text-xl">Become part of our CRAZY chicken family!</p>
@@ -164,7 +172,14 @@ const Reviews = () => {
                 FLAVOR EXPLOSION!
               </div>
             </div>
-          </div>
+          </div> */}
+
+
+
+
+
+
+
         </div>
       </div>
       {/* Add the keyframes for the scroll animation */}
