@@ -81,7 +81,7 @@ const Menu = () => {
 					{menuItems.map((item, index) => (
 						<div
 							key={item.id}
-							className={`bg-white rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 border-4 ${index % 2 === 0 ? "border-yellow-400" : "border-black"}`}
+							className={"bg-white rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 border-4 border-yellow-400"}
 						>
 							<div className="relative overflow-hidden">
 								<img

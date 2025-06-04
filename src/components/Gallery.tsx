@@ -99,7 +99,11 @@ const Gallery = () => {
             ? 'opacity-100 transform translate-y-0' 
             : 'opacity-0 transform translate-y-10'
         }`}>
-
+ <div className="flex justify-center mt-12">
+          <a href="https://www.clover.com/online-ordering/hfcyxe" className=" text-black hover:bg-yellow-300 px-12 py-4 rounded-full font-black text-xl transition-all duration-200 transform hover:scale-110 border-4 border-yellow-400 shadow-lg" style={{ backgroundColor: '#070A0F',color:"white" }}>
+            ORDER NOW
+          </a>
+        </div>
 
 
 {/*           
