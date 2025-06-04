@@ -68,8 +68,8 @@ const Menu = () => {
 						MENU MADNESS
 					</div> */}
 					<h2 className="text-6xl font-black text-white mb-6 drop-shadow-lg">
-						<span className="block">OUR CRAZY</span>
-						<span className="block text-yellow-400">CHICKEN MENU!</span>
+						<span className="block">OUR MENU</span>
+						{/* <span className="block text-yellow-400">CHICKEN MENU!</span> */}
 					</h2>
 					{/* <p className="text-xl text-white max-w-2xl mx-auto font-bold">
 						Get ready for the WILDEST chicken dishes that'll make your taste
