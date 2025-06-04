@@ -87,9 +87,9 @@ const Menu = () => {
                 </div>
                 <p className="text-gray-600 mb-6 font-semibold" style={{minHeight:"4.5em"}}>{item.description}</p>
                 <div className="text-center">
-                  <div className="bg-gradient-to-r from-black to-gray-800 text-yellow-400 py-3 px-6 rounded-full font-black text-lg transform hover:scale-105 transition-all duration-200 cursor-pointer">
+                  {/* <div className="bg-gradient-to-r from-black to-gray-800 text-yellow-400 py-3 px-6 rounded-full font-black text-lg transform hover:scale-105 transition-all duration-200 cursor-pointer">
                     LOOKS DELICIOUS!
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
